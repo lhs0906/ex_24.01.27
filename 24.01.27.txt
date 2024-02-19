@@ -1,0 +1,41 @@
+1. 비디오 : <video> ... </video> 태그를 사용함.
+
+  1) 비디오 파일 지정 : src 속성을 이용하여 지정함.  -> <video src="movie.mp4">
+  2) <video> 요소의 속성들
+      - autoplay : 비디오를 자동적으로 재생함.
+      - controls : 브라우저가 비디오 재생을 제어하는 컨트롤들을 표시함.
+      - src : 재생할 오디오가 존재하는 URL을 지정함.
+      - loop : 브라우저가 비디오를 반복하여 재생함.
+      - poster : 비디오가 다운로드 중일 때 이미지를 표시함.
+      - preload : 사용자가 사용할 생각이 없더라도 전체 오디오를 다운로드 함.
+      - muted : 비디오의 오디오 출력을 중지함.
+      - width, height : 비디오 재생기의 너비와 높이.
+      
+      
+  3) 비디오 파일 형식 (mp4, ogg, webm)
+      : <source> 태그를 사용하여 비디오 소스에 대해 여러가지 파일 형식을 제공함.
+          (일부 브라우저에서는 특정 형식의 동영상 파일이 지원되지 않는 경우가 있기 때문.)
+           ex) <source src="movie.mp4"  type="video/mp4">
+                <source src="movie.ogg"  type="video/ogg">
+       
+	 - type 속성 : <source> 태그의 type 속성은 MINE 타입으로 표시함. 비디오의 형식 표시.
+
+  4) control 속성 사용 시, width/height 속성도 함께 지정하는것이 좋음.
+     ( 높이와 폭이 지정되어 있으면, 비디오를 위한 공간을 웹 브라우저가 미리 가늠할 수 있음.)
+
+
+2. 오디오 : <audio> ... </audio> 태그를 사용함.  -> <audio src="k_pop.mp3">
+   
+   1) 오디오 파일 지정 : src 속성으로 지정함.
+   
+   2) <audio> 요소의 속성들 : <video> 속성과 동일함.
+   
+   3) 오디오 파일 형식 (mp3, wav, ogg)
+       : <source> 태그를 사용하여 여러가지 파일 형식을 동시에 제공한다.
+         ex) <source src="k_pop.mp3"  type="audio/mp3">
+              <source src="k_pop.ogg"  type="audio/ogg">
+
+        - type 속성 : <source> 태그의 type 속성은 MINE 타입으로 표시함. 오디오의 형식 표시.
+
+
+
